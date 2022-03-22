@@ -1,3 +1,3 @@
-# Strapi application
+# myJoubert Backend
 
-A quick description of your strapi application
+API for myJoubert Vue Web App
