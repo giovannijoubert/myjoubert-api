@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/song-suggestions",
+      "handler": "song-suggestion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-suggestions/search",
+      "handler": "song-suggestion.searchSongs",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-suggestions/count",
+      "handler": "song-suggestion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-suggestions/:id",
+      "handler": "song-suggestion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/song-suggestions",
+      "handler": "song-suggestion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/song-suggestions/:id",
+      "handler": "song-suggestion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/song-suggestions/:id",
+      "handler": "song-suggestion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

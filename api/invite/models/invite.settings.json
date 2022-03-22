@@ -1,0 +1,119 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invites",
+  "info": {
+    "name": "Invite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "unsent",
+        "sent",
+        "link_viewed",
+        "responded"
+      ],
+      "required": true,
+      "default": "unsent"
+    },
+    "payment": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "group_name": {
+      "type": "string",
+      "required": true
+    },
+    "people": {
+      "via": "invite",
+      "collection": "person"
+    },
+    "song_suggestion_votes": {
+      "collection": "song-suggestion-vote",
+      "via": "invite"
+    },
+    "song_suggestions": {
+      "collection": "song-suggestion"
+    },
+    "payment_made": {
+      "type": "decimal",
+      "default": 0
+    },
+    "last_login": {
+      "type": "datetime"
+    },
+    "login_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "num_additional_guests": {
+      "type": "integer",
+      "default": 0
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "reminder": {
+      "type": "json"
+    },
+    "kitstik_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "dresscode_viewed": {
+      "type": "boolean",
+      "default": true
+    },
+    "fotos_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "geskenklys_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "vrae_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "venue_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "countdown_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "tunes_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "betaling_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "game_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "onthou_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "rsvp_viewed": {
+      "type": "boolean",
+      "default": false
+    },
+    "friends_viewed": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "prices",
+  "info": {
+    "name": "Price",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "adult": {
+      "type": "decimal"
+    },
+    "kid": {
+      "type": "decimal"
+    },
+    "day": {
+      "type": "decimal"
+    },
+    "payment_due": {
+      "type": "date"
+    }
+  }
+}

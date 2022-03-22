@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "song_suggestions",
+  "info": {
+    "name": "Song Suggestion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "trackName": {
+      "type": "string",
+      "required": true
+    },
+    "artistName": {
+      "type": "string"
+    },
+    "artworkUrl100": {
+      "type": "string"
+    },
+    "previewUrl": {
+      "type": "string"
+    },
+    "primaryGenreName": {
+      "type": "string"
+    },
+    "trackId": {
+      "unique": true,
+      "type": "integer"
+    }
+  }
+}

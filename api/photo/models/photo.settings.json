@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photos",
+  "info": {
+    "name": "Photo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "photo_gallery": {
+      "model": "photo-gallery",
+      "via": "photos"
+    },
+    "capture_date": {
+      "type": "date"
+    },
+    "order": {
+      "type": "integer",
+      "unique": false,
+      "default": 0
+    }
+  }
+}

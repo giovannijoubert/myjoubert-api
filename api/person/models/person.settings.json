@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "person",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "cellnumber": {
+      "type": "string"
+    },
+    "attending": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "kid": {
+      "type": "boolean",
+      "default": false
+    },
+    "wedding_party": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "invite": {
+      "model": "invite",
+      "via": "people"
+    },
+    "entire_weekend": {
+      "type": "boolean",
+      "default": true
+    },
+    "which_gang": {
+      "type": "enumeration",
+      "enum": [
+        "his",
+        "hers"
+      ]
+    },
+    "invite_media": {
+      "type": "enumeration",
+      "enum": [
+        "digital",
+        "physical",
+        "none"
+      ]
+    },
+    "additional_guest": {
+      "type": "boolean"
+    },
+    "save_the_date_sent": {
+      "type": "boolean",
+      "default": false
+    },
+    "friend_group_kerk_bandies": {
+      "type": "boolean",
+      "default": false
+    },
+    "friend_group_hele_sirkus": {
+      "type": "boolean",
+      "default": false
+    },
+    "friend_group_ons_ark": {
+      "type": "boolean",
+      "default": false
+    },
+    "friend_group_wynklub": {
+      "type": "boolean",
+      "default": false
+    },
+    "friend_group_koffie_sel": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

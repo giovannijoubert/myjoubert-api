@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "song_suggestion_votes",
+  "info": {
+    "name": "Song Suggestion Vote",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "invite": {
+      "via": "song_suggestion_votes",
+      "model": "invite"
+    },
+    "song_suggestion": {
+      "model": "song-suggestion"
+    }
+  }
+}

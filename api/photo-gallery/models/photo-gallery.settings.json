@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photo_galleries",
+  "info": {
+    "name": "Photo Gallery",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "photos": {
+      "via": "photo_gallery",
+      "collection": "photo"
+    },
+    "order": {
+      "type": "integer",
+      "unique": false
+    }
+  }
+}

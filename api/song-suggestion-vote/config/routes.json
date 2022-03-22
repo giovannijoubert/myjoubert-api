@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/song-suggestion-votes",
+      "handler": "song-suggestion-vote.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-suggestion-votes/count",
+      "handler": "song-suggestion-vote.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/song-suggestion-votes/:id",
+      "handler": "song-suggestion-vote.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/song-suggestion-votes",
+      "handler": "song-suggestion-vote.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/song-suggestion-votes/:id",
+      "handler": "song-suggestion-vote.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/song-suggestion-votes/:id",
+      "handler": "song-suggestion-vote.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
